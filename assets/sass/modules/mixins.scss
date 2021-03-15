@@ -144,3 +144,17 @@
   // Output standard non-prefixed declaration
   #{$property}: $value;
 }
+
+// Generate mobile-first media queries.
+@mixin media($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media only screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;
+		}
+	} @else {
+		@warn "Unfortunately, there is no value that could be retrieved from `#{$breakpoint}`. "
+		+ "Please make sure it's been defined in `$breakpoints` map.";
+	}
+}
+
+}
