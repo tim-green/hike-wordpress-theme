@@ -87,3 +87,16 @@ $black-weight:    900;
 $text-cap: capitalize; 
 $text-lower: lowercase;
 $text-upper: uppercase;
+$text-none: none;
+
+// Grid settings.
+$max-width: 1200px;
+$column-gutter: 40px;
+
+// Breakpoints.
+$breakpoints: (
+	'x-small': 380px,
+	'small': 480px,
+	'medium': 768px,
+	'large': 1024px
+);
