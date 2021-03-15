@@ -60,6 +60,9 @@ $base-border: 1px solid $base-border-color;
 $base-font-size: 2rem; // 20px
 $base-line-height: 1.7;
 
+// Line Height
+$base-line-height: 1.6; // 32px / 20px = 1.6
+$heading-line-height: 1.25; // 25px / 20px = 1.25
 //Google font
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Playfair+Display:wght@400;500;600;700);
 
